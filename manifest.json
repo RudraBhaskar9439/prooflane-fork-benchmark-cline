@@ -1,0 +1,44 @@
+{
+  "base_commit": "838b1a555e59091607ce412b737a19058386d0cd",
+  "candidate_commit": "11c1f64920a67da8d7828b82ebdbae41ae6acf33",
+  "recording": "Actual Chromium viewport recording; no overlays, mocks or compositing. MP4 is an H.264 transcode of the unedited original WebM. Same single Add one click on fresh contexts.",
+  "results": {
+    "before": {
+      "phase": "before",
+      "commit": "838b1a555e59091607ce412b737a19058386d0cd",
+      "browser": "Chromium 159.0.8154.6",
+      "headless": true,
+      "baseURL": "http://127.0.0.1:3417",
+      "initial": "0",
+      "action": "one click on Add one",
+      "observed": "2",
+      "behaviorAssertion": "passed",
+      "syntaxCheck": "passed",
+      "journey": "expected failure",
+      "recordedAt": "2026-11-18T03:33:13.721Z"
+    },
+    "after": {
+      "phase": "after",
+      "commit": "11c1f64920a67da8d7828b82ebdbae41ae6acf33",
+      "browser": "Chromium 159.0.8154.6",
+      "headless": true,
+      "baseURL": "http://127.0.0.1:3418",
+      "initial": "0",
+      "action": "one click on Add one",
+      "observed": "1",
+      "behaviorAssertion": "passed",
+      "syntaxCheck": "passed",
+      "journey": "passed",
+      "recordedAt": "2026-11-18T03:33:43.561Z"
+    }
+  },
+  "sha256": {
+    "after.mp4": "d3db4ddb3c38f20645d8c83e80c417d16aac6270230cb5670145448c6c201e0a",
+    "after.png": "8761a981f762e7e1c971c2562be2d741538c5377072080d7142316beed70b6bf",
+    "after.webm": "6ee963f7f0eaa010de55e96cbabbefc9483b193d1a68d44b0077d3e19c8ecaf0",
+    "before.mp4": "7abab77277f572e10247e7343a0edc28a26725db5dca021af50b4c0d39507d41",
+    "before.png": "ba7e097c4b6473ff18dc0f55ba92aec0d62d16883812131f7f36f9c943c5bd5e",
+    "before.webm": "564fd565e60760bb10e6fa64b607bd6560afced83f937093b490069e7e5e13a9",
+    "test.log": "7218e160147b540c5ad0a55233ef71b640970a0ebddeba7092c292629968e3d9"
+  }
+}

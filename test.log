@@ -1,0 +1,19 @@
+PASS before: node --check server.mjs; commit 838b1a555e59091607ce412b737a19058386d0cd
+PASS before: Chromium 159.0.8154.6; initial 0; one Add one click => 2
+PASS before: existing journey rejects buggy count 2 (expected failure)
+expect(locator).toHaveText(expected) failed
+
+Locator:  getByLabel('Count')
+Expected: "1"
+Received: "2"
+Timeout:  1500ms
+
+Call log:
+  - Expect "toHaveText" getByLabel('Count') with timeout 1500ms
+  - waiting for getByLabel('Count')
+    16 × locator resolved to <output aria-label="Count">2</output>
+       - unexpected value "2"
+
+PASS after: node --check server.mjs; commit 11c1f64920a67da8d7828b82ebdbae41ae6acf33
+PASS after: Chromium 159.0.8154.6; initial 0; one Add one click => 1
+PASS after: complete regression journey (initial zero, first click, second click, reload)
